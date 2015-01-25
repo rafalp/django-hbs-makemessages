@@ -2,7 +2,7 @@
 django-hbs-makemessages
 =======================
 
-.. image:: https://travis-ci.org/rafalp/django-hbs-makemessages
+.. image:: https://travis-ci.org/rafalp/django-hbs-makemessages.png?branch=master
     :target: https://travis-ci.org/rafalp/django-hbs-makemessages
 
 
@@ -18,9 +18,9 @@ Install library via pip:
 
     pip install django-hbs-makemessages
 
-CD to directory containing ``locale`` directory and JS app and fire makemessages:
+CD to project containing ``locale`` directory and JS app and fire ``makemessages`` for your locale:
 
-    django-admin-hbs.py makemessages -l en_us -d djangojs
+    django-admin-hbs.py makemessages --l en_us --d djangojs
 
 Now check your locale's djangojs.po file for your locale and see if it contains translation files:
 
