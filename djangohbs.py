@@ -160,8 +160,8 @@ class HandlebarsFile(object):
             self.make_js_file(self.hbs_path, self.js_path)
 
     def make_js_path_suffix(self, hbs_path):
-        token = md5(text_type(hbs_path).encode("utf-8")).hexdigest()[:8]
-        return '%s.makemessages.js' % make_js_path_suffix
+        signature = md5(text_type(hbs_path).encode("utf-8")).hexdigest()[:8]
+        return '%s.makemessages.js' % signature
 
     def make_js_path(self, hbs_path, path_suffix):
         return Path('%s.%s' % (text_type(hbs_path), path_suffix))
