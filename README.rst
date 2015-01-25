@@ -2,6 +2,10 @@
 django-hbs-makemessages
 =======================
 
+.. image:: https://travis-ci.org/rafalp/django-hbs-makemessages
+    :target: https://travis-ci.org/rafalp/django-hbs-makemessages
+
+
 Library providing ``django-admin-hbs.py`` script that exposes custom ``makemessages`` command that can extract language strings from .hbs and .handlebars files.
 
 This library complements `django-ember-gettext <https://github.com/rafalp/django-ember-gettext>`_ Ember.js addon that provides Django's `gettext` support in Ember.js application.
