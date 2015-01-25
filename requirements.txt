@@ -1,0 +1,2 @@
+django>=1.5
+path.py>=7.0
