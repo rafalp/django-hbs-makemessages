@@ -20,7 +20,7 @@ EXCLUDE_FROM_PACKAGES = ['testapp']
 
 setup(
     name='django-hbs-makemessages',
-    version='0.9.1',
+    version='0.9.2',
     license='MIT',
     description='Library providing makemessages for Handlebars.js templates',
     long_description=README,
