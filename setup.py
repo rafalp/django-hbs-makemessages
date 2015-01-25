@@ -8,19 +8,9 @@ requirements_path = os.path.join(os.path.dirname(__file__), 'requirements.txt')
 with open(requirements_path, "r") as f:
     REQUIREMENTS = [x.strip() for x in f.readlines()]
 
-REQUIREMENTS = REQUIREMENTS[1:]
-
-
-# allow setup.py to be run from any path
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
-
-
-EXCLUDE_FROM_PACKAGES = ['testapp']
-
-
 setup(
     name='django-hbs-makemessages',
-    version='0.9.2',
+    version='0.9.6',
     license='MIT',
     description='Library providing makemessages for Handlebars.js templates',
     long_description=README,
@@ -28,8 +18,7 @@ setup(
     author=u'Rafał Pitoń',
     author_email='kontakt@rpiton.com',
     install_requires=REQUIREMENTS,
-    packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
-    include_package_data=True,
+    py_modules=['djangohbs', 'django-admin-hbs'],
     scripts=[
         'django-admin-hbs.py'
     ],
